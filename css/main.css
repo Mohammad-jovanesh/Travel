@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 html{
@@ -65,8 +64,6 @@ nav{
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    
-   
 }
 .nav_list .nav_item .nav_link{
    color:  #fff;
@@ -104,14 +101,67 @@ nav{
     color: #fff;
     outline: none;
 }
+/*Location Section*/
+#locations{
+    background-color: red;
+    width:100%;
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),transparent),
+    url(../Image/new-york-page.png) no-repeat center ;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+.locations_title{
+    width:90%;
+    font-size: 4.8rem;
+    margin-bottom:4rem;
+     text-decoration:underline;
+     text-decoration-thickness: 0.3rem;
+     font-weight: 700;
+     
+}
+.locations_text{
+    width:90%;
+    font-size:3.2rem;
+    line-height:4.3rem;
+    font-weight: 400;
+    background: linear-gradient(#131c27,#663b34);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+.Cloud{
+    position:absolute;
+    right: 0;
 
+}
+.moveing_cloud_1{
+    top: -6rem;
+    z-index: 5;
+   
+    animation: moveing_cloud 4s ease-in-out infinite alternate  ;
+    
+}
+.moveing_cloud_2{
+    top:5rem;
+    z-index: -1;
+    animation: moveing_cloud 3s ease-in-out infinite alternate  ;
+   
+}
+
+/* MEDIA Query */
 @media screen and (max-width:1250px){
     html{
         font-size:40%;
     }
     #Header .Logo{
-        text-align: center;
-       
+        text-align: center; 
     }
     nav{
         margin:3rem 0 2rem ; 
@@ -131,4 +181,58 @@ nav{
         font-size: 2.5rem;
         
     }
+    .Cloud{
+      
+         width:60%;
+    }
+}
+@media (max-width:1000px){ 
+    .Cloud{
+       
+        width:80%;
+   }
+}
+@media (max-width:850px){
+    #locations{
+        padding-left: 0rem;
+    }
+    .locations_title{
+        text-align: center;
+        width:100%;
+    }
+    .locations_text{
+        text-align: center;
+        width:90%;
+        background:rgba(0,0,0,0.5);
+        -webkit-text-fill-color:white;
+        padding:1rem;
+        margin:0 auto;
+    }
+    .Cloud{
+        width:100%;
+   }
+}
+@media (max-width:500px){
+    .locations_title{
+        font-size:4rem;
+    }
+    .locations_text{
+        font-size:2.5rem;
+    }
+    .Cloud{
+        width:60rem;
+   }
+}
+/* Animation */
+@keyframes moveing_cloud {
+    0%{
+        transform:translate(10%,-10%);
+       
+    }
+    
+    100%{
+        transform:translate(0,-0  );
+        
+    }
+    
 }
