@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size:62.5%;
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-size:2.6rem
+}
+
+li,button,label,input,p{
+    font-size:2rem
+}
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size:3rem;
+}
+h4,h5{
+    font-size:2.8rem;
+}
+a{
+    
+    text-decoration: none;
+
+}
+ul{
+list-style:none;
+}
+/*Nav section  and Hero section*/
+#Header{
+    background:#131c27;
+    width:100%;
+  
+    
+}
+
+#Header .Logo{
+    color: #fff; 
+    flex: 2 1 40rem;
+    
+}
+.container{
+    width:90%;
+    min-height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;  
+    flex-wrap: wrap;
+}
+nav{
+    flex: 1 1 50rem;
+   
+    
+}
+.nav_list{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+}
+.nav_list .nav_item .nav_link{
+   color:  #fff;
+}
+
+#hero{
+    background:linear-gradient(rgba(0, 0, 0, 0.8),transparent),url(../Image/landing-page.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 90vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.hero_heading{
+    font-size:4.8rem;
+    margin-bottom: 5rem;
+}
+.hero_text{
+    font-size:3rem;
+    
+    padding:3rem;
+    text-align:center;
+}
+
+
+#hero>button{
+    background:#27394e;
+    padding:2rem 6rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+
+@media screen and (max-width:1250px){
+    html{
+        font-size:40%;
+    }
+    #Header .Logo{
+        text-align: center;
+       
+    }
+    nav{
+        margin:3rem 0 2rem ; 
+    }
+    .hero_heading{
+        text-align: center;
+       
+        margin-bottom: 2rem;
+    }
+    .hero_text{
+        
+        padding:1rem 0.5rem !important;
+    }
+    #hero>button{
+        margin-top: 4rem;
+        padding:2rem 6rem;
+        font-size: 2.5rem;
+        
+    }
+}
