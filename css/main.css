@@ -154,7 +154,140 @@ nav{
     animation: moveing_cloud 3s ease-in-out infinite alternate  ;
    
 }
+/*Benefit Style*/
+#benefits{
+    width:100%;
+   
+   
+    
+}
+.benefits_heading{
+    width:100%;
+    background:red;
+    min-height: 20vh;
+    text-align: center;
+    padding:3rem;
+    background:#343c44;
+    color: #fff;
 
+}
+
+.benefits_title{
+    font-size:5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.benefits_heading>h3{
+    font-size:3rem;
+    font-weight:normal;
+    line-height: 4.5rem;
+    opacity:0.7;
+    
+}
+
+.benefits_Cards{
+    width:90%;
+    display:flex;
+    min-height:70vh;
+    align-items: center;
+    justify-content:space-evenly;
+    padding:5rem auto;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+.card_item{
+    flex: 1 1 30rem; 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5),0px 20px 20px rgb(0,0,0,0.1);
+    margin:2rem 5rem;
+    
+   
+}
+.heading_card{
+    background-color:#343c44;
+    width:100%;
+    height:10rem;
+    display: flex;
+   
+    
+}
+.heading_card img{
+   max-width:15rem;
+   height:80%;
+    margin:auto;
+     
+}
+.card_item_title{
+    margin:2rem 0 1rem;
+    text-align:center;
+    font-size:3rem;
+
+}
+.card_item_text{
+    text-align:center;
+    line-height:3rem;
+    margin:1rem 1rem 3rem;
+}
+/*contact Styles*/
+.contact{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),transparent), url(../Image/contact-mountain.png) no-repeat center;
+    background-size: cover;
+    display:flex;
+
+}
+.Box_Contact{
+    margin:auto;
+    width:70rem;
+    background:rgba(19, 28, 39, 0.8);
+    border-radius: 2rem;
+    overflow:hidden;
+
+}
+.Box_Contact_heading{
+    width:100%;
+    text-align: center;
+    color: #fff;
+    font-size:4rem;
+    padding:2rem;
+}
+.form-group_Name
+,.form-group_Email{
+    text-align: center;
+    padding:3rem;
+    
+}
+.form-group_Name>label,
+.form-group_Email>label{
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+input {
+    padding:1rem 2rem;
+    font-size:2rem;
+    
+}
+.form_Email{
+    margin-bottom:3rem;
+}
+.form>button{
+    width:100%;
+    padding:2rem;
+    color:#fff;
+    font-size: 2rem;
+    background:#4c6e97;
+    border:none;
+    cursor:pointer;
+
+}
+.form>button:hover {
+    background:#33537ade;
+    transition: background 0.5s ease-in-out;
+}
 /* MEDIA Query */
 @media screen and (max-width:1250px){
     html{
