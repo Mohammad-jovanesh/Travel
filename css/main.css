@@ -233,7 +233,7 @@ nav{
 .contact{
     width:100%;
     min-height:70vh;
-    background:linear-gradient(rgba(0,0,0,0.5),transparent), url(../Image/contact-mountain.png) no-repeat center;
+    background:linear-gradient(rgba(0, 0, 0,0.8),transparent), url(../Image/contact-mountain.png) no-repeat center;
     background-size: cover;
     display:flex;
 
@@ -287,6 +287,30 @@ input {
     background:#33537ade;
     transition: background 0.5s ease-in-out;
 }
+/*Footer Start*/
+#footer {
+    background:#131c27;
+    width:100%;
+    min-height: 10rem;
+    display:flex;
+    align-items:center;
+    padding:1rem 6rem;
+}
+.Copy_logo{
+color:#fff;
+font-size:4rem;
+flex: 1 1 20rem;
+}
+.Social_list{
+    flex: 1 1 20rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.Social_list li>a {
+    color: #fff;
+    font-size:3rem;
+}
 /* MEDIA Query */
 @media screen and (max-width:1250px){
     html{
@@ -322,6 +346,9 @@ input {
     .Cloud{
        
         width:80%;
+   }
+   .Logo{
+       font-size:4rem;
    }
 }
 @media (max-width:850px){
