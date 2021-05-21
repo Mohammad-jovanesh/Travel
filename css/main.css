@@ -157,14 +157,13 @@ nav{
 /*Benefit Style*/
 #benefits{
     width:100%;
-   
+    min-height: 20vh;
    
     
 }
 .benefits_heading{
     width:100%;
     background:red;
-    min-height: 20vh;
     text-align: center;
     padding:3rem;
     background:#343c44;
