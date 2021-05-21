@@ -295,17 +295,19 @@ input {
     display:flex;
     align-items:center;
     padding:1rem 6rem;
+    flex-wrap: wrap;
 }
 .Copy_logo{
 color:#fff;
 font-size:4rem;
-flex: 1 1 20rem;
+flex: 1 1 30rem;
 }
 .Social_list{
     flex: 1 1 20rem;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    
 }
 .Social_list li>a {
     color: #fff;
@@ -372,6 +374,10 @@ flex: 1 1 20rem;
     .Cloud{
         width:100%;
    }
+   .Social_list{
+       padding: 1rem 2rem;       
+       margin-bottom:2rem;
+   }
 }
 @media (max-width:500px){
     .locations_title{
@@ -382,6 +388,12 @@ flex: 1 1 20rem;
     }
     .Cloud{
         width:60rem;
+   }
+   .Copy_logo{
+       text-align:center;
+       margin-bottom:2rem;
+       
+    
    }
 }
 /* Animation */
